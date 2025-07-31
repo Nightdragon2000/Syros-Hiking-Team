@@ -5,7 +5,7 @@ Hiking Syros Team is a responsive, multilingual single-page application built wi
 
 The platform provides a seamless user experience, combining dynamic UI components with internationalization support for both English and Greek.
 
-**[Live Site – Visit the Website](https://nightdragon2000.github.io/Hiking-Syros)**
+**[Live Site – Visit the Website](https://nightdragon2000.github.io/Syros-Hiking-Team)**
 
 ## Features
 
