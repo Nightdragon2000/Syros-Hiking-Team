@@ -52,8 +52,8 @@ The platform provides a seamless user experience, combining dynamic UI component
 
 ### Setup
 ```bash
-git clone https://github.com/your-username/hiking-syros-team.git
-cd hiking-syros-team
+git clone https://github.com/afroditikalantzi/Syros-Hiking-Team.git
+cd Syros-Hiking-Team
 npm install
 npm start
 ```
