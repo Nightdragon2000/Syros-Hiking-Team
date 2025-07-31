@@ -1,0 +1,55 @@
+const trailsData = [
+    {
+      id: 1,
+      key: 'trail1',
+      difficulty: 'easy',
+      duration: 'short',
+      region: 'central',
+      distanceValue: 3.5,
+      durationValue: 2,
+      imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center',
+    },
+    {
+      id: 2,
+      key: 'trail2',
+      difficulty: 'moderate',
+      duration: 'medium',
+      region: 'south',
+      distanceValue: 3,
+      durationValue: 3,
+      imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center',
+    },
+    {
+      id: 3,
+      key: 'trail3',
+      difficulty: 'easy',
+      duration: 'short',
+      region: 'central',
+      distanceValue: 2.5,
+      durationValue: 1.5,
+      imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center',
+    },
+    {
+      id: 4,
+      key: 'trail4',
+      difficulty: 'moderate',
+      duration: 'medium',
+      region: 'south',
+      distanceValue: 7,
+      durationValue: 3.5,
+      imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center',
+    },
+    {
+      id: 5,
+      key: 'trail5',
+      difficulty: 'hard',
+      duration: 'long',
+      region: 'north',
+      distanceValue: 10,
+      durationValue: 5,
+      imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center',
+    },
+  ];
+  
+  export default trailsData;
+  

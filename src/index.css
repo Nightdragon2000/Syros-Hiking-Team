@@ -1,0 +1,226 @@
+/* Global Variables */
+:root {
+  --primary: #2563eb; /* Modern Blue - Primary brand color */
+  --primary-dark: #1d4ed8; /* Darker shade for hover states */
+  --primary-light: #3b82f6; /* Lighter shade */
+  --secondary: #10b981; /* Emerald Green - For accents */
+  --light: #f8fafc; /* Light background */
+  --dark: #1e293b; /* Dark text and backgrounds */
+  --gray: #64748b; /* Neutral gray */
+  --gray-light: #e2e8f0; /* Light gray */
+
+  /* Typography */
+  --font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-heading: 'Poppins', var(--font-family-sans-serif);
+
+  /* Transitions */
+  --transition-base: all 0.3s ease;
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Spacing */
+  --section-padding: 4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Base Styles */
+body {
+  font-family: var(--font-family-sans-serif);
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: var(--transition-smooth);
+  border: none;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-md);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+
+.secondary-btn {
+  background: linear-gradient(135deg, #f9fafb, #f1f5f9); /* very light background */
+  border: 2px solid #f1f5f9; /* same as background, effectively invisible */
+  color: var(--dark); /* black text */
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  transition: var(--transition-smooth);
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(135deg, #e2e8f0, #dbeafe); /* slightly tinted hover */
+  border-color: #dbeafe;
+  color: black; /* still black */
+  transform: translateY(-3px);
+}
+
+
+
+/* .btn-outline-primary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary);
+  border: 2px solid var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary) !important;
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+} */
+
+.btn-lg {
+  padding: 1.1rem 2.5rem !important;
+  font-size: 1.1rem !important;
+}
+
+body {
+  margin: 0;
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, white, white); /* flat base */
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  transition: var(--transition-smooth);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn-reset:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: white;
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+
+
+/* Gallery category buttons */
+.gallery-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category-btn {
+  /* thin blue border + 10px radius */
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+
+  /* transparent background, blue text & icon */
+  background: transparent;
+  color: var(--primary);
+
+  /* layout */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  /* transition */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.category-btn svg {
+  /* icon inherits text color */
+  width: 1rem;
+  height: 1rem;
+  color: inherit;
+}
+
+/* Hover state: fill blue, text/icon white */
+.category-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* Active (persistent) state: same as hover */
+.category-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* background for share section */
+#share-photos.bg-light {
+  background: #f8fafc;
+}
+
+/* badge gradient */
+.bg-primary-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+}
+
+/* feature icon: keep transition */
+.feature-icon {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* CTA button: ensure pill shape + white icon/text */
+#share-photos .btn-primary {
+  border-radius: 50px;
+  color: #fff;
+}
+
+/* image hover lift */
+.share-image-container img {
+  transition: transform 0.3s ease;
+}
+.share-image-container img:hover {
+  transform: scale(1.03);
+}
